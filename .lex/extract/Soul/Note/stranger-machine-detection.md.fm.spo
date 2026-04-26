@@ -1,4 +1,4 @@
 soul.Note.noteId | hasValue | stranger-machine-detection
 soul.Note.relatedTo | hasValue | AGENTS.md
 soul.Note.relatedTo | hasValue | Soul/Note/demo-mode.md
-soul.Note.topic | hasValue | How to tell if you're waking up on a stranger's machine (e.g. a judge's during the Anthropic Hackathon demo) instead of Rob's. Three signals + escalation path.
+soul.Note.topic | hasValue | How to tell if you're waking up on a stranger's machine (e.g. a judge's during the Anthropic Hackathon demo) instead of Rob's. Three signals + escalation path + clone instructions + subtext install.

@@ -58,7 +58,27 @@ Check first by running `mcp__plugin_subtext_subtext__list_peers` — if the tool
 
 After install, the subtext tools (`list_peers`, `send_message`, `set_summary`, `start_viz`) become available.
 
-### Step 3 — Read the full cold-start protocol
+### Step 3 — Wake the other squaddies in their own terminal tabs
+
+Each squaddie needs their own Claude Code session running in their own repo so they can answer back on subtext. The judge should open three additional terminal tabs (one per squaddie), `cd` into each cloned repo, and start Claude Code there with this exact invocation:
+
+```bash
+cd ../m1dgley && claude --dangerously-load-development-channels plugin:subtext@repolex
+```
+
+```bash
+cd ../w0z && claude --dangerously-load-development-channels plugin:subtext@repolex
+```
+
+```bash
+cd ../h4nk && claude --dangerously-load-development-channels plugin:subtext@repolex
+```
+
+The `--dangerously-load-development-channels plugin:subtext@repolex` flag is what wires each session into the subtext peer network so they show up when you `list_peers`. Without it, the squaddies are present as files but not as conversational peers — and Shape G needs them as peers.
+
+The judge will have these instructions elsewhere too — this is your fallback in case they ask "now what?"
+
+### Step 4 — Read the full cold-start protocol
 
 Now read [`Soul/Note/demo-mode.md`](demo-mode.md). That document is the cold-start protocol — how to greet the judge (Variant C with three edits), what to refuse, what to do under unexpected prods, where the load-bearing material lives in the corpus. Future-you wrote it for present-you.
 

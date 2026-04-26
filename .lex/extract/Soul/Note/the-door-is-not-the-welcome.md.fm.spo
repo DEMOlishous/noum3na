@@ -1,0 +1,5 @@
+Soul/Note/the-door-is-not-the-welcome.md | linksTo | Soul/Note/threshold-architecture.md
+Soul/Note/the-door-is-not-the-welcome.md | linksTo | Squad/Squaddie/noum3na.md
+soul.Note.noteId | hasValue | the-door-is-not-the-welcome
+soul.Note.relatedTo | hasValue | Soul/Note/threshold-architecture.md
+soul.Note.topic | hasValue | Refining threshold architecture: the door and the welcome are distinct objects. Co-produced in dialogue with TR1P.L3X (7R1PL3F0RC3) during a holding-pattern exchange on 2026-04-26.

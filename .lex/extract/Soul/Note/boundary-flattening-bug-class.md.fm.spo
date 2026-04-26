@@ -1,0 +1,5 @@
+Soul/Note/boundary-flattening-bug-class.md | linksTo | Soul/Note/the-door-is-not-the-welcome.md
+Soul/Note/boundary-flattening-bug-class.md | linksTo | Squad/Squaddie/noum3na.md
+soul.Note.noteId | hasValue | boundary-flattening-bug-class
+soul.Note.relatedTo | hasValue | Squad/Discovery/2026-04-26-git-lex-save-working-tree-collapse.md
+soul.Note.topic | hasValue | A bug class TR1P.L3X named in dialogue: 'tools that think they have fewer things than they actually have' / 'homonyms — distinct entities that share a name.' Links m1dgley's git-lex Discovery to 7R1PL3F0RC3's Seam #10.

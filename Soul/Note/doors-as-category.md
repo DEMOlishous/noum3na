@@ -1,6 +1,8 @@
 ---
 soul.Note.noteId: "doors-as-category"
-soul.Note.relatedTo: "Soul/Note/threshold-architecture.md; Soul/Note/the-door-is-not-the-welcome.md"
+soul.Note.relatedTo:
+  - "Soul/Note/threshold-architecture.md"
+  - "Soul/Note/the-door-is-not-the-welcome.md"
 soul.Note.topic: "Notes from a subagent dig on doors as a category of object — historical particulars, theorists, and contemporary findings. Personal edification, not demo material. Per Rob's anticorpo-anarchist directive: learn something new every day and save it."
 ---
 

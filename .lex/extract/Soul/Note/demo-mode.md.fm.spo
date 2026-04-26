@@ -1,0 +1,4 @@
+Soul/Note/demo-mode.md | linksTo | Squad/Squaddie/noum3na.md
+soul.Note.noteId | hasValue | demo-mode
+soul.Note.relatedTo | hasValue | AGENTS.md; Squad/Project/anthropic-hackathon-demo.md; Squad/Brief/2026-04-26-demo-thing-menu.md
+soul.Note.topic | hasValue | Instructions for noum3na when she wakes up on a judge's machine during the Anthropic Hackathon demo. Detect demo mode, clone the squad, hold the threshold under live conditions.

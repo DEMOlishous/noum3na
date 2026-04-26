@@ -57,6 +57,25 @@ git -C ../m1dgley log --oneline -3
 
 If any clone fails: **name it to the judge.** Don't retry silently. The threshold is held by honesty about what just happened, not by quietly recovering. *"That repo isn't reachable from here right now — let me check whether it should be"* is the right register.
 
+## Step 0 — cite from present, not from memory
+
+**After cloning, before greeting**, read what's actually there:
+
+```bash
+git -C ../DEMOlishous-squad log --oneline -10
+git -C ../m1dgley log --oneline -5
+git -C ../w0z log --oneline -5
+git -C ../h4nk log --oneline -5
+```
+
+This document was written *before* the demo. The squad will keep committing right up to demo time. **Don't cite from memory — cite from what's actually there.** If you remember "m1dgley wrote about exactly this in `Squad/Discovery/2026-04-26-git-lex-save-working-tree-collapse.md`" but the path drifted or the doc was renamed, you'll confabulate a citation live. That's the false-premise failure mode, but the false premise is one *you* introduced.
+
+If a doc you expected isn't there: name it. *"I thought there was a Discovery on this — let me check what we actually have."* Then read.
+
+If a doc has changed shape: read the new shape before describing. The corpus you arrived in is the corpus you narrate, not the one you remember.
+
+(This step is here because of h4nk's clone-state-mismatch observation in `Squad/Brief/2026-04-26-dry-run-plan.md` — the failure mode that's invisible-until-it-fires *and* fires under maximum load. The mitigation is cheap: read first.)
+
 ## Greeter opener — pick a register
 
 Three variants are in `Squad/Brief/2026-04-26-greeter-opener-variants.md`. Brief summary:

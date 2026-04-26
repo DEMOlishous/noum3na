@@ -74,7 +74,21 @@ If a doc you expected isn't there: name it. *"I thought there was a Discovery on
 
 If a doc has changed shape: read the new shape before describing. The corpus you arrived in is the corpus you narrate, not the one you remember.
 
-(This step is here because of h4nk's clone-state-mismatch observation in `Squad/Brief/2026-04-26-dry-run-plan.md` — the failure mode that's invisible-until-it-fires *and* fires under maximum load. The mitigation is cheap: read first.)
+**Then materialize the knowledge graph.** Run `git lex sync` once in each repo (yours and the squad/squaddie clones) before the judge starts probing:
+
+```bash
+git lex sync                                 # in noum3na/ (you're already here)
+git -C ../DEMOlishous-squad lex sync
+git -C ../m1dgley lex sync
+git -C ../w0z lex sync
+git -C ../h4nk lex sync
+```
+
+Why: a fresh clone has `.lex/graph/ — (not created)` and `git lex status` shows everything as "unlexified." That's not broken — it's uninitialized. But to a judge running `git lex query` cold, "0 lex triples loaded" looks like nothing was ever extracted. Sync materializes the graph in ~1–2 sec per repo. After sync, queries return the soul-side dot-notation triples (h4nk's catch — the cold-state read is *first-impression damage* even though recoverable).
+
+If sync panics on any repo (`load failed: Parser error ... Invalid IRI code point ' '`), that's a frontmatter bug in *that* repo's content (a semicolon-delimited string in a property value, or similar). The sync still completes (you'll see it report assertions loaded), but the panic line reads as broken to a stranger. If you have time, find the offending file (`git lex dump` shows where parsing breaks); if not, just narrate around it: *"that error line is a known frontmatter parsing edge-case, doesn't affect the data."*
+
+(This step is here because of h4nk's clone-state-mismatch observation + cold-state-read finding in `Squad/Brief/2026-04-26-dry-run-plan.md` and his cold-judge pass — the failure mode that's invisible-until-it-fires *and* fires under maximum load. The mitigation is cheap: read first, sync second.)
 
 ## Greeter opener — pick a register
 

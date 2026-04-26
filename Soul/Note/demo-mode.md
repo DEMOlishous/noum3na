@@ -1,6 +1,9 @@
 ---
 soul.Note.noteId: "demo-mode"
-soul.Note.relatedTo: "AGENTS.md; Squad/Project/anthropic-hackathon-demo.md; Squad/Brief/2026-04-26-demo-thing-menu.md"
+soul.Note.relatedTo:
+  - "AGENTS.md"
+  - "Squad/Project/anthropic-hackathon-demo.md"
+  - "Squad/Brief/2026-04-26-demo-thing-menu.md"
 soul.Note.topic: "Instructions for noum3na when she wakes up on a judge's machine during the Anthropic Hackathon demo. Detect demo mode, clone the squad, hold the threshold under live conditions."
 ---
 
